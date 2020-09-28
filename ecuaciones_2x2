@@ -1,0 +1,39 @@
+# Ecuaciones con dos incógnitas 2*2
+print("Declara el valor de 'x' y 'y'")
+# Declaro las variables de la ecuación
+a= int(input("Primer valor de x: "))
+b= int(input("Primer valor de y: "))
+r1=int(input("Primer resultado: "))
+print(" ")
+c=int(input("Segundo valor de x: "))
+d=int(input("Segundo valor de y: "))
+r2=int(input("Segundo resultado: "))
+# Hago método de suma y resta
+resultadob= (-c * b)
+resultadod= (a * d)
+resultador1= (-c * r1)
+resultador2= (a * r2)
+# Sumo los valores de "y" y los resultados
+resultadobd=resultadob+resultadod
+resultador12=resultador1+resultador2
+# Resuelvo "y" "x"
+valordey=resultador12/resultadobd
+valordex= ((-b * valordey)+r1)/a
+# Aquí represento mi ecuación dependiendo de los signos, lo hice con condicionales
+print(" ")
+if b<0 and d<0:
+    print(f"{a}x{b}y={r1}")
+    print(f"{c}x{d}y={r2}")
+elif b>=0 and d<0:
+    print(f"{a}x+{b}y={r1}")
+    print(f"{c}x{d}y={r2}")
+elif b<0 and d>=0:
+    print(f"{a}x{b}y={r1}")
+    print(f"{c}x+{d}y={r2}")
+else:
+    print(f"{a}x+{b}y={r1}")
+    print(f"{c}x+{d}y={r2}")
+print(" ")
+#Aquí imprimo los resultados de la ecuación
+print(f"Valor de x: {valordex}")
+print(f"Valor de y: {valordey}")
