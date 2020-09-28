@@ -1,0 +1,22 @@
+print("Si=1 No>=2")
+d = int(input("¿Quiere identificar el tipo de triángulo? "))
+while d==1:
+    print(" ")
+    print("Identifica a, b y c como lados en el triángulo")
+    a = int(input("Inserte valor del lado a: "))
+    b = int(input("Inserte valor del lado b: "))
+    c = int(input("Inserte valor del lado c: "))
+    if a<=0 or b<=0 or c<=0:
+        print("Error")
+        print("Favor de escribir los datos correctamente")
+    elif a==b and b==c and c==a:
+        print("Triángulo equilatero")
+    elif a==b or b==c or c==a:
+        print("Triángulo isosceles")
+    elif a!=b and b!=c and c!=a:
+        print("Triángulo escaleno")
+    print("Si=1 No>=2")
+    d = int(input("¿Quiere seguir identificando triángulos? "))
+    print(" ")
+else:
+    print("Fin")
